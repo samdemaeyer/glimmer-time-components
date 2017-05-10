@@ -1,3 +1,10 @@
 <div>
-  <h1>Welcome to Glimmer!</h1>
+  <div class="button-holder">
+    <a href="#" class="button" onclick={{action toggleTheme}}>Switch Theme</a>
+  </div>
+  <h2 class="title">Current time clock</h2>
+  <alarm-clock @theme={{theme}}></alarm-clock>
+  <hr>
+  <h2 class="title">Countdown Timer counting down to 10 days from now (12:00)</h2>
+  <countdown-timer @theme={{theme}}></countdown-timer>
 </div>

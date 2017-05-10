@@ -1,0 +1,50 @@
+<div>
+  <div id="clock" class="{{@theme}}">
+    <div class="display">
+      <div class="weekdays">
+        {{#each weekdays key="@index" as |weekday|}}
+          <span class="{{weekday.cssClass}}">{{weekday.day}}</span>
+        {{/each}}
+      </div>
+      <div class="alarm"></div>
+      <div class="digits">
+        {{#each time.hours key="@index" as |digit|}}
+          <div class="{{digit}}">
+            <span class="d1"></span>
+            <span class="d2"></span>
+            <span class="d3"></span>
+            <span class="d4"></span>
+            <span class="d5"></span>
+            <span class="d6"></span>
+            <span class="d7"></span>
+          </div>
+        {{/each}}
+        <div class="dots"></div>
+        {{#each time.minutes key="@index" as |digit|}}
+          <div class="{{digit}}">
+            <span class="d1"></span>
+            <span class="d2"></span>
+            <span class="d3"></span>
+            <span class="d4"></span>
+            <span class="d5"></span>
+            <span class="d6"></span>
+            <span class="d7"></span>
+          </div>
+        {{/each}}
+        <div class="dots"></div>
+        {{#each time.seconds key="@index" as |digit|}}
+          <div class="{{digit}}">
+            <span class="d1"></span>
+            <span class="d2"></span>
+            <span class="d3"></span>
+            <span class="d4"></span>
+            <span class="d5"></span>
+            <span class="d6"></span>
+            <span class="d7"></span>
+          </div>
+        {{/each}}
+
+      </div>
+    </div>
+  </div>
+</div>
